@@ -1,4 +1,4 @@
-baseURL: "https://blog.yungne.studio"
+baseURL: "https://blog.yungen.studio"
 title: Yungen's Blog
 paginate: 8
 theme: hugo-PaperMod
