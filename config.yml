@@ -5,7 +5,7 @@ theme: hugo-PaperMod
 #enableInlineShortcodes: true
 enableRobotsTXT: true
 
-# googleAnalytics: UA-123-45
+googleAnalytics: G-4SRN3WZH2N
 
 
 params:
@@ -24,6 +24,7 @@ params:
         Title: "哈囉 \U0000270C"
         Content: >
             歡迎來到我的個人部落格
+            
             - 我會在這裡分享一些我學習到的新知識
     socialIcons:
         - name: twitter
