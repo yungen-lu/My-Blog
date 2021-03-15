@@ -2,9 +2,9 @@ name: Build My Blog
 
 on:
   push:
-    paths-ignore:
-      - 'images/**'
-      - 'README.md'
+    # paths-ignore:
+    #   - 'images/**'
+    #   - 'README.md'
     branches:
       - main
 
