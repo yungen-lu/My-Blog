@@ -17,6 +17,7 @@ spec:
       containers:
       - name: blog
         image: yungen/myblog:latest
+        imagePullPolicy: "Always"
         ports:
         - name: myblog
           containerPort: 80
