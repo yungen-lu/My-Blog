@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myblog
+  labels:
+    app: myblog
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: myblog
+  template:
+    metadata:
+      labels:
+        app: myblog
+    spec:
+      containers:
+      - name: blog
+        image: yungen/myblog:latest
+        ports:
+        - name: myblog
+          containerPort: 80
+        resources:
+          limits:
+            cpu: 10m
+            memory: 100Mi

@@ -1,0 +1,24 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: myblogingress
+  annotations:
+        kubernetes.io/ingress.class: nginx
+        cert-manager.io/cluster-issuer: "letsencrypt-prod"
+spec:
+  rules:
+  - host: "blog.yungen.studio"
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: myblog
+            port:
+              number: 80
+  tls:
+    - hosts:
+      - "blog.yungen.studio"
+      secretName: blog-yungen-studio-tls
