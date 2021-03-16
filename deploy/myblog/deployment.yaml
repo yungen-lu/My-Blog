@@ -5,7 +5,7 @@ metadata:
   labels:
     app: myblog
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: myblog
@@ -22,6 +22,9 @@ spec:
         - name: myblog
           containerPort: 80
         resources:
+          requests:
+            cpu: 50m
+            memory: 50Mi
           limits:
             cpu: 200m
             memory: 150Mi
