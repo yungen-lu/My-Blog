@@ -35,6 +35,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
+          file: ./Dockerfiles/Dockerfile
           context: .
           platforms: linux/arm64,linux/arm/v7,linux/amd64,
           tags: yungen/myblog:latest
