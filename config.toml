@@ -1,0 +1,58 @@
+baseURL = "https://blog.yungen.studio"
+title = "Yungen's Blog"
+paginate = 8.0
+theme = "hugo-PaperMod"
+enableRobotsTXT = true
+
+[params]
+env = "production"
+title = "Yungen's Blog"
+description = "My personal blog"
+author = "Yungen"
+ShowReadingTime = true
+defaultTheme = "auto"
+ShowShareButtons = true
+
+  [params.homeInfoParams]
+  Title = "哈囉 ✌"
+  Content = "歡迎來到我的個人部落格\n- 我會在這裡分享一些我學習到的新知識\n"
+
+  [params.cover]
+  responsiveImages = false
+
+  [[params.socialIcons]]
+  name = "twitter"
+  url = "https://twitter.com/yungenlu"
+
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/yungen-lu"
+
+  [[params.socialIcons]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/yungen-lu-ba1073204/"
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[menu]
+
+  [[menu.main]]
+  identifier = "categories"
+  name = "分類"
+  url = "/categories/"
+  weight = 10.0
+
+  [[menu.main]]
+  identifier = "tags"
+  name = "標籤"
+  url = "/tags/"
+  weight = 20.0
+
+  [[menu.main]]
+  identifier = "Blog"
+  name = "首頁"
+  url = "https://blog.yungen.studio"
+  weight = 30.0
